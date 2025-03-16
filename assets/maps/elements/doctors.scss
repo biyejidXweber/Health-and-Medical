@@ -1,0 +1,135 @@
+// doctors area start
+.banner-content-four.doctors.search {
+    input {
+        width: 460px !important;
+
+        @media #{$smlg-device} {
+            width: 350px !important;
+        }
+
+        @media #{$mdsm-layout} {
+            width: 100% !important;
+        }
+    }
+
+    .search-your-doctor-form form .nice-select {
+        width: 460px !important;
+
+        @media #{$smlg-device} {
+            width: 350px !important;
+        }
+
+        @media #{$mdsm-layout} {
+            width: 100% !important;
+        }
+    }
+
+    .rts-btn {
+        padding: 16px 28px;
+    }
+}
+
+
+.large-team-details-thumbnail {
+    padding: 20px;
+    border-radius: 10px;
+    background: #F1F1FF;
+
+    img {
+        width: 100%;
+    }
+}
+
+.large-doctor-details-area-left {
+    .bottom-doctor-details {
+        padding: 20px;
+        background: #F1F1FF;
+        border-radius: 10px;
+        margin-top: 20px;
+
+        .inner {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px 20px;
+
+            .single-shedule {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 12px 0;
+                border-bottom: 1px solid rgba(97, 94, 252, 0.2);
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.doctor-all-details-area {
+    .pre-title {
+        color: var(--color-primary);
+        padding: 5px 12px;
+        border-radius: 33px;
+        border: 1px solid rgba(97, 94, 252, 0.2);
+        margin-bottom: 20px;
+        display: block;
+        max-width: max-content;
+    }
+
+    .name {
+        font-size: 36px;
+
+        @media #{$large-mobile} {
+            font-size: 30px;
+        }
+    }
+
+    p {
+        margin-bottom: 30px;
+        font-size: 18px;
+        color: #111032;
+
+        @media #{$large-mobile} {
+            font-size: 16px;
+        }
+
+        b {
+            font-size: 20px;
+            font-weight: 500;
+            color: #111032;
+        }
+    }
+}
+
+.follow-me-social-area {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    span {
+        font-size: 16px;
+        color: #111032;
+        font-weight: 500;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        list-style: none;
+
+        li {
+            margin: 0;
+            padding: 0;
+
+            i {
+                font-size: 16px;
+                color: var(--color-primary);
+            }
+        }
+    }
+}

@@ -1,0 +1,231 @@
+// footer style here
+
+.footer-bg {
+    background: #111032;
+}
+
+.subscribe-area-start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media #{$sm-layout} {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .subscribe-area {
+        position: relative;
+
+        @media #{$large-mobile} {
+            width: 100%;
+        }
+
+        input {
+            height: 56px;
+            width: 418px;
+            border-radius: 100px;
+            border: 1px solid rgba(97, 94, 252, 0.2);
+            color: #fff;
+
+            @media #{$large-mobile} {
+                width: 100%;
+            }
+
+            &:focus {
+                border: 1px solid var(--color-primary);
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 7px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.rts-success-story-area {
+    .vedio-icone {
+        img {
+            width: 100%;
+        }
+    }
+
+    .move-right {
+        @media #{$sm-layout} {
+            font-size: 44px !important;
+        }
+
+        @media #{$large-mobile} {
+            font-size: 36px !important;
+        }
+    }
+}
+
+
+.footer-wrapper-style-between {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 201px;
+    padding-top: 50px;
+    border-top: 1px solid #201F57;
+    padding-bottom: 80px;
+
+    @media #{$laptop-device} {
+        gap: 80px;
+    }
+
+    @media #{$smlg-device} {
+        gap: 80px;
+    }
+
+    @media #{$mdsm-layout} {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    @media #{$large-mobile} {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .single-wized {
+        &:nth-child(1) {
+            flex-basis: 202px;
+        }
+
+        &:nth-child(2) {
+            flex-basis: 119px;
+        }
+
+        &:nth-child(3) {
+            flex-basis: 142px;
+        }
+
+        &:nth-child(4) {
+            flex-basis: 213px;
+        }
+
+        .title {
+            color: #fff;
+            font-size: 20px;
+            position: relative;
+            max-width: max-content;
+
+            &::after {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                content: '';
+                background: #fff;
+                width: 100%;
+                height: 1px;
+            }
+        }
+
+        .body {
+            padding-top: 25px;
+
+            .location {
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                display: block;
+                color: #fff;
+                margin-bottom: 20px;
+                transition: .3s;
+                font-weight: 400;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+
+            .nav-bottom {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                li {
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.copyright-area {
+    background: #201F57;
+    padding: 24px 0;
+
+    .copyright-area-inner {
+        text-align: center;
+
+        p {
+            color: #fff;
+            margin: 0;
+
+            a {
+                transition: .3s;
+            }
+        }
+    }
+}
+
+.footer-two {
+    background: #F1F1FF;
+
+    .footer-wrapper-style-between .single-wized .title {
+        color: var(--color-primary);
+
+        &::after {
+            background: var(--color-primary);
+        }
+    }
+
+    .footer-wrapper-style-between .single-wized .body a,
+    .footer-wrapper-style-between .single-wized .body .location {
+        color: #111032;
+    }
+
+    .footer-wrapper-style-between .single-wized .body a {
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+
+    .subscribe-area-start .subscribe-area input {
+        color: var(--color-primary);
+    }
+
+    .footer-wrapper-style-between {
+        border-color: rgba(97, 94, 252, 0.2);
+    }
+}
+
+.copyright-area {
+    &.two {
+        background: #fff;
+
+        p {
+            color: #111032;
+        }
+    }
+}
+
+.footer-three {
+    background: #F8F8FF;
+}

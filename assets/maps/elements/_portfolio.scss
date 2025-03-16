@@ -1,0 +1,65 @@
+// portfolio
+
+.top-title-wrapper-center-clip {
+    .title {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #111032;
+        font-size: 90px;
+        text-align: center;
+        font-family: var(--font-secondary);
+
+        @media #{$smlg-device} {
+            font-size: 60px;
+        }
+
+        @media #{$sm-layout} {
+            font-size: 40px;
+        }
+
+        @media #{$large-mobile} {
+            font-size: 32px;
+        }
+    }
+
+}
+
+.portfolio-area-main-wrapper {
+    .thumbnail-image {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.portfolio-area-main-wrapper {
+    .right-images-content {
+        background-image: url(../images/portfolio/02.jpg);
+        height: 100%;
+        border-radius: 10px;
+        padding: 40px;
+
+        @media #{$large-mobile} {
+            padding: 25px;
+        }
+
+        .title {
+            font-size: 48px;
+            color: #fff;
+
+            @media #{$smlg-device} {
+                font-size: 26px;
+            }
+        }
+
+        p.disc {
+            color: #FFFFFF;
+        }
+
+        .rts-btn {
+            &:hover {
+                border: 1px solid var(--color-primary) !important;
+            }
+        }
+    }
+}

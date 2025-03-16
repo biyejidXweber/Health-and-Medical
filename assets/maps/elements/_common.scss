@@ -1,0 +1,10 @@
+.jarallax {
+    min-height: 100vh;
+
+    /* Massage some hw accel, good for all, best for mobile */
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}

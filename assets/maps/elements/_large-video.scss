@@ -1,0 +1,27 @@
+// large  video
+
+.container-140 {
+    max-width: 1640px;
+    margin: auto;
+}
+
+.large-video-main-wrapper {
+    background: var(--color-primary);
+    border-radius: 10px;
+
+    .title {
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+    }
+}
+
+.large-iamge-area-large {
+    margin-top: 60px;
+
+    img {
+        border-radius: 10px;
+    }
+}

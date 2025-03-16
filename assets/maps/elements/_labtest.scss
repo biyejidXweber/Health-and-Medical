@@ -1,0 +1,107 @@
+// lab test area start
+
+.title-six-center {
+    text-align: center;
+
+    .title {
+        font-size: 48px;
+
+        @media #{$sm-layout} {
+            font-size: 32px;
+        }
+
+        @media #{$large-mobile} {
+            font-size: 26px;
+        }
+
+        @media #{$small-mobile} {
+            font-size: 24px;
+        }
+    }
+}
+
+.single-lab-test {
+    padding: 40px;
+    border-radius: 10px;
+    height: 100%;
+
+    @media #{$smlg-device} {
+        padding: 20px;
+    }
+
+    &.bg-pink {
+        background: #FFCFC4;
+    }
+
+    &.bg-green {
+        background: #ABFFB8;
+    }
+
+    &.bg-light-card {
+        background: #E8E8FF;
+    }
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 22px;
+
+        @media #{$sm-layout} {
+            font-size: 26px;
+        }
+
+        @media #{$large-mobile} {
+            font-size: 24px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .thumbnail {
+        display: block;
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .lap-test-wrapper {
+        margin-top: 35px;
+
+        .single-lab-test-service {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+
+            p {
+                margin: 0;
+                color: #111032;
+                font-size: 18px;
+                font-weight: 400;
+
+                @media #{$smlg-device} {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .price {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 0;
+        font-family: var(--font-secondary);
+        font-size: 26px;
+        font-weight: 500;
+
+        i {
+            margin-right: 10px;
+        }
+    }
+}

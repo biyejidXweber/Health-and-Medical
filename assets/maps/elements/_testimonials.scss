@@ -1,0 +1,337 @@
+.single-testimonials-style {
+    background: #F1F1FF;
+    padding: 31px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+
+    z-index: 1;
+
+    @media #{$small-mobile} {
+        padding: 20px;
+    }
+
+    &.two {
+        .quots {
+            margin-left: auto;
+            max-width: max-content;
+            margin-bottom: 0;
+        }
+
+
+
+        .quote-tag-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .tag-top {
+                span {
+                    padding: 10px 21px;
+                    border-radius: 33px;
+                    border: 1px solid rgba(97, 94, 252, 0.2);
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: var(--color-primary);
+                }
+            }
+        }
+
+        .author-wrapper {
+            .brand {
+                max-width: 120px;
+                height: max-content;
+            }
+        }
+    }
+
+    .shape {
+        z-index: -1;
+        position: absolute;
+        right: 30px;
+        top: 0;
+    }
+
+    .quots {
+        margin-bottom: 30px;
+    }
+
+    p.disc {
+        color: #111032;
+        font-size: 18px;
+
+        @media #{$small-mobile} {
+            font-size: 16px;
+        }
+    }
+
+    .author-area {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .info {
+            .name {
+                margin-bottom: 3px;
+            }
+
+            .stars-area {
+                i {
+                    font-size: 14px;
+                    color: #FE922F;
+                }
+            }
+        }
+    }
+}
+
+.swiper-container-h1 {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 64px;
+}
+
+.container-custom-testimonials {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.single--testimonials-2 {
+    padding-left: 550px !important;
+    border-radius: 0;
+
+    @media #{$laptop-device} {
+        padding-left: 400px !important;
+    }
+
+    @media #{$smlg-device} {
+        padding-left: 30px !important;
+    }
+}
+
+.single--testimonials-2 {
+    background-image: url(../images/testimonials/01.jpg);
+    padding: 80px 80px;
+    border-radius: 40px;
+
+    @media #{$smlg-device} {
+        background-color: #615EFC;
+        background-image: none;
+    }
+
+    @media #{$large-mobile} {
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .content-area {
+        position: relative;
+        max-width: 80%;
+        left: 50px;
+
+        @media #{$smlg-device} {
+            left: 5%;
+            max-width: 100%;
+        }
+
+        @media #{$mdsm-layout} {
+            left: 0;
+        }
+
+        .quote {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 40px;
+            line-height: 1.2;
+            color: #fff;
+            margin-bottom: 40px;
+
+            @media #{$sm-layout} {
+                font-size: 26px;
+            }
+        }
+
+        .author-area-main {
+            * {
+                color: #fff;
+            }
+
+            .title {
+                margin-bottom: 5px;
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+.mySwiper-testimonials-2 {
+    position: relative;
+    border-radius: 40px;
+
+    @media #{$mdsm-layout} {
+        border-radius: 10px;
+    }
+
+    .swiper-pagination {
+        bottom: 50px;
+        right: 160px;
+        max-width: max-content;
+        left: auto;
+        z-index: 100;
+
+        @media #{$large-mobile} {
+            bottom: 30px;
+            right: 30px;
+        }
+
+        .swiper-pagination-bullet {
+            background: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+.rts-testimonials-area {
+    .title-between-area {
+        position: relative;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background: transparent;
+            border: 1px solid #615EFC;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+            transform: none;
+            bottom: 0;
+            top: auto;
+            transition: .3s;
+
+            @media #{$large-mobile} {
+                display: none;
+            }
+
+            i {
+                color: #615EFC;
+                transition: .3s;
+            }
+
+            &:hover {
+                background: var(--color-primary);
+
+                i {
+                    color: #fff;
+                }
+            }
+        }
+
+        .swiper-button-next {
+            right: 0;
+        }
+
+        .swiper-button-prev {
+            right: 60px;
+            left: auto;
+        }
+    }
+}
+
+
+.rts-hospital-branch .tab-content>.tab-pane {
+    display: block !important;
+    opacity: 1;
+    position: absolute;
+    z-index: -5;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0s;
+
+    &.show.active {
+        display: block !important;
+        position: relative;
+        z-index: 1;
+        visibility: visible;
+    }
+}
+
+.rts-hospital-branch {
+    .tab-content {
+        position: relative;
+        height: auto;
+    }
+}
+
+.rts-hospital-branch {
+    .nav {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: none;
+
+        li {
+            margin: 0;
+            padding: 0;
+
+            button {
+                padding: 9px 26px;
+                border-radius: 33px;
+                border: 1px solid rgba(97, 94, 252, 0.2) !important;
+                border-color: rgba(97, 94, 252, 0.2);
+
+                &.active {
+                    background: var(--color-primary) !important;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+
+.custom-select {
+    width: 100%;
+    height: 44px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    border: 1px solid var(--color-border);
+
+    &.one {
+        background: transparent;
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+        &:focus {
+            border: 1px solid #fff;
+        }
+
+        &::after {
+            border-color: #fff;
+            right: 25px;
+        }
+
+        span {
+            color: #fff;
+        }
+    }
+
+}
+
+.rts-appoinment-area {
+    .uni-animation-spin {
+        padding: 6px;
+    }
+}

@@ -1,0 +1,107 @@
+.shedule-1 {
+    table {
+        width: 100%;
+        border-collapse: separate;
+        /* Allows space between cells */
+        border-spacing: 6px;
+        /* 4px gutter between cells */
+        margin: 0;
+        font-size: 14px;
+        /* Matches overall table background */
+    }
+
+    th,
+    td {
+        padding: 20px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5;
+    }
+
+    th {
+        background-color: #f4f4f900;
+        color: #333;
+        font-weight: 400;
+        font-size: 16px;
+        border: 1px solid rgba(97, 94, 252, 0.2);
+        border-radius: 10px;
+        text-transform: capitalize;
+    }
+
+    .time {
+        background-color: #f9f9f9;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--color-primary);
+    }
+
+    .doctor {
+        font-size: 12px;
+        padding: 20px;
+        line-height: 1.3;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .doctor-blue {
+        background-color: #5b67fc;
+        /* Dark blue background */
+        color: white;
+
+        a {
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        &:hover {
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    .doctor-light {
+        background-color: #F1F1FF;
+        /* Light blue background */
+        color: var(--color-primary);
+        border: none;
+
+        * {
+            color: var(--color-primary);
+        }
+    }
+
+    .schedule th:first-child,
+    .schedule td:first-child {
+        background-color: #fafafa;
+        /* Light gray background for time column */
+        color: var(--color-primary);
+    }
+
+    .schedule td {
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        line-height: 1.5;
+
+        /* Slight shadow for emphasis */
+        a {
+            font-size: 16px;
+            margin-bottom: 0;
+            display: block;
+            text-decoration: none !important;
+        }
+
+        /* Ensure the background color stays intact with the border spacing */
+        .schedule .doctor-blue {
+            background-color: #5b67fc;
+        }
+
+        .schedule .doctor-light {
+            background-color: #F1F1FF;
+        }
+
+    }
+}

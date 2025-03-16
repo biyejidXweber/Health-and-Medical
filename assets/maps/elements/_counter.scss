@@ -1,0 +1,60 @@
+// counter area start
+
+.counter-area-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media #{$mdsm-layout} {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-between;
+    }
+
+    @media #{$sm-layout} {
+        gap: 80px;
+        justify-content: center;
+    }
+
+    .single-counter {
+        position: relative;
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            right: -150px;
+            height: 100%;
+            top: 0;
+            width: 1px;
+            background: rgba(97, 94, 252, 0.2);
+
+            @media #{$mdsm-layout} {
+                display: none;
+            }
+        }
+
+        .icon-area {
+            margin-bottom: 0;
+        }
+
+        .title {
+            margin-top: 20px;
+            margin-bottom: 16px;
+            font-size: 40px;
+        }
+    }
+}
+
+.single-dental-service-areas {
+    .thumbnail {
+        img {
+            width: 1000%;
+        }
+    }
+}

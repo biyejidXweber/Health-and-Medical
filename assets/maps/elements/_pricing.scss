@@ -1,0 +1,83 @@
+// pricing area start
+
+.g-75 {
+    --bs-gutter-y: 30px;
+    --bs-gutter-x: 70px;
+
+    @media #{$large-mobile} {
+        --bs-gutter-y: 20px;
+        --bs-gutter-x: 20px;
+    }
+}
+
+.single-pricing-area {
+    border-radius: 10px;
+    border: 1px solid #E3E3E3;
+    padding: 40px 50px;
+
+    @media #{$small-mobile} {
+        padding: 25px;
+    }
+
+    .pricing-head {
+        border-bottom: 1px solid #D8D8D8;
+        margin-bottom: 30px;
+
+        span {
+            color: #111111;
+        }
+
+        .price {
+            color: var(--color-primary);
+            margin-bottom: 6px;
+        }
+
+        p {
+            color: #1f1f1f;
+            margin-bottom: 20px;
+        }
+    }
+
+    .body {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .single-check {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+
+        i {
+            color: var(--color-primary);
+        }
+    }
+
+    .rts-btn {
+        margin-top: 40px;
+    }
+
+    &.active {
+        background: #615EFC;
+
+        h2,
+        p,
+        span {
+            color: #fff !important;
+        }
+
+        i {
+            color: #fff;
+        }
+
+        .rts-btn {
+            border: 1px solid #fff;
+
+            &:hover {
+                border-color: #111032;
+            }
+        }
+    }
+}

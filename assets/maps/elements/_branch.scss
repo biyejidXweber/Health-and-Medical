@@ -1,0 +1,216 @@
+// branch 
+
+.single-hospitalbranch {
+    background: #fff;
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+
+    .thumbnail {
+        display: block;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+
+        img {
+            transition: .3s;
+        }
+    }
+
+    &:hover {
+        .thumbnail {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .inner-content {
+        padding: 24px;
+
+        .title {
+            margin-bottom: 8px;
+            font-size: 24px;
+            transition: .3s;
+
+            &:hover {
+                color: var(--color-primary) !important;
+            }
+        }
+
+        .bottom-area-start {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(97, 94, 252, 0.2);
+            margin-top: 25px;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+
+                .icon {
+                    i {
+                        font-size: 22px;
+                        color: var(--color-primary);
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #111032;
+                    line-height: 20px;
+                }
+            }
+
+            .right {
+                span {
+                    color: #111032;
+                    font-size: 14px;
+                    line-height: 1.2;
+                    margin-bottom: 5px;
+                    display: block;
+                }
+
+                .stars-area {
+                    display: flex;
+                    align-items: center;
+                    gap: 1px;
+
+                    i {
+                        font-size: 14px;
+                        color: var(--color-primary);
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 0;
+}
+
+.brand-wrapper-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media #{$mdsm-layout} {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .single-brand {
+        max-width: 190px;
+
+        img {
+            max-width: 190px;
+
+            @media #{$smlg-device} {
+                max-width: 120px;
+            }
+        }
+    }
+}
+
+.swiper-container-h3 {
+    position: relative;
+    padding-bottom: 60px;
+    overflow: hidden;
+
+    .swiper-pagination {
+        bottom: 0;
+    }
+}
+
+.swiper-next-prev-controller {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background: transparent;
+        border: 1px solid #615EFC;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: .3s;
+
+        i {
+            color: #615EFC;
+        }
+
+        &:hover {
+            background: var(--color-primary);
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+
+    .swiper-button-next {
+        right: -80px;
+    }
+
+    .swiper-button-prev {
+        left: -80px;
+    }
+}
+
+
+.button-dental-bwtween-area {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background: transparent;
+        border: 1px solid #615EFC;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        transform: none;
+        bottom: 0;
+        top: auto;
+        transition: .3s;
+
+        @media #{$large-mobile} {
+            display: none;
+        }
+
+        i {
+            color: #615EFC;
+            transition: .3s;
+        }
+
+        &:hover {
+            background: var(--color-primary);
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .swiper-button-prev {
+        right: 60px;
+        left: auto;
+    }
+}

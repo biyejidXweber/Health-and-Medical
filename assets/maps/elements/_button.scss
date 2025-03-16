@@ -1,0 +1,43 @@
+// button
+.rts-btn {
+    padding: 18px 26px;
+    font-size: 16px;
+    border-radius: 100px;
+    margin: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+    transition: .3s;
+
+    &.btn-primary {
+        background: var(--color-primary);
+        color: #fff;
+
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        img {
+            margin-right: 2px;
+        }
+
+        &:hover {
+            background: #111032;
+            color: #fff;
+        }
+    }
+}
+
+
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 40px;
+    border: 1px solid #615efc33;
+    border-radius: 50%;
+    cursor: pointer;
+}

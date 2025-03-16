@@ -1,0 +1,37 @@
+.nav-area {
+    @media #{$smlg-device} {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        @media #{$laptop-device} {
+            gap: 40px;
+        }
+
+        @media #{$smlg-device} {
+            gap: 20px;
+        }
+
+        li {
+            margin: 0;
+            padding: 0;
+
+            a {
+                color: #111032;
+            }
+        }
+    }
+}
+
+
+.nav-area ul li.main-nav {
+    padding: 27px 0;
+    cursor: pointer;
+}

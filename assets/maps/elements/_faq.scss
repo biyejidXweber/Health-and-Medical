@@ -1,0 +1,56 @@
+// faq area start
+
+.container-wrapper-faq {
+    max-width: 850px;
+    margin: auto;
+
+    .accordion .accordion-item {
+        margin-bottom: 10px;
+        border: 1px solid rgba(97, 94, 252, 0.2);
+        border-radius: 10px;
+        padding: 16px 30px;
+
+        @media #{$large-mobile} {
+            padding-left: 5px;
+        }
+
+        .accordion-header {
+            background: transparent;
+            box-shadow: none;
+            border: none;
+
+            button {
+                background: transparent;
+                box-shadow: none;
+                border: none;
+
+                font-size: 20px;
+                font-family: var(--font-primary);
+                font-weight: 600;
+                color: #111032;
+
+                &::after {
+                    background-image: none;
+                    content: "\f055";
+                    font-family: var(--font-3);
+                    font-weight: 100;
+                    transform: none;
+                    margin-left: auto;
+                    top: 23%;
+                    position: absolute;
+                    right: 0;
+                }
+
+                &[aria-expanded="true"] {
+                    &::after {
+                        content: '\f056';
+                    }
+                }
+            }
+        }
+
+        .accordion-body {
+            color: #111032;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+// breadcrumb area start
+
+.rts-breadcrumb-area {
+    background-image: url(../images/breadcrumb/01.jpg);
+}
+
+.breadcrumb-area-wrapper {
+    text-align: center;
+    align-items: center;
+
+    h1.title {
+        font-size: 64px;
+
+        @media #{$large-mobile} {
+            font-size: 54px;
+        }
+
+        @media #{$sm-layout} {
+            font-size: 44px;
+        }
+
+        @media #{$large-mobile} {
+            font-size: 34px;
+        }
+    }
+
+    .nav-bread-crumb {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+
+        i {
+            color: #111032;
+        }
+
+        a {
+            color: #111032;
+
+            &.current {
+                text-decoration: underline;
+            }
+        }
+    }
+}

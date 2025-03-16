@@ -1,0 +1,452 @@
+// appoinment area start
+.appoinment-area-main {
+    background-image: url(../images/appoinment/01.jpg);
+    padding: 70px;
+
+    @media #{$large-mobile} {
+        padding: 15px;
+    }
+
+    .title {
+        color: #fff;
+        font-size: 48px;
+
+        @media #{$large-mobile} {
+            font-size: 32px;
+        }
+
+        @media #{$small-mobile} {
+            font-size: 26px;
+        }
+    }
+}
+
+
+.appoinment-area-main {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+
+    form {
+        input {
+            height: 50px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF;
+            font-size: 14px;
+
+            &:focus {
+                border: 1px solid #fff;
+            }
+        }
+
+        .half-input-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @media #{$large-mobile} {
+                flex-direction: column;
+            }
+        }
+
+        a.rts-btn {
+            background: #fff;
+            color: var(--color-primary);
+
+            img {
+                filter: brightness(0) saturate(100%) invert(30%) sepia(70%) saturate(3539%) hue-rotate(234deg) brightness(110%) contrast(98%);
+            }
+        }
+    }
+}
+
+.request-appoinemnt-area-main-wrapper {
+    background-image: url(../images/appoinment/03.jpg);
+    padding: 76px 0 !important;
+}
+
+
+
+.request-appoinemnt-area-main-wrapper {
+    text-align: center;
+    border-radius: 10px;
+
+    .pre {
+        border-radius: 30px;
+        padding: 5px 16px;
+        color: #ffffff;
+        margin-bottom: 30px;
+        text-align: center;
+        display: block;
+        max-width: max-content;
+        margin: auto;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .title {
+        margin-top: 20px;
+        color: #fff;
+        font-size: 64px;
+        line-height: 1;
+        margin-bottom: 30px;
+
+        @media #{$mdsm-layout} {
+            font-size: 54px;
+        }
+
+        @media #{$sm-layout} {
+            font-size: 44px;
+        }
+
+        @media #{$large-mobile} {
+            font-size: 32px;
+            line-height: 1.3;
+        }
+
+        @media #{$small-mobile} {
+            font-size: 26px;
+        }
+
+        span {
+            font-size: 48px;
+
+            @media #{$large-mobile} {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .rts-btn {
+        margin: auto;
+        background: #fff;
+        color: var(--color-primary);
+    }
+}
+
+// appoinment area start
+.uni-circles-blureds {
+    overflow: hidden;
+    z-index: -1
+}
+
+.uni-circles-blureds>div {
+    width: 1000px;
+    height: 1000px;
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    filter: blur(80px);
+}
+
+.uni-circles-blureds>div:first-child {
+    left: -50%;
+    top: -50%;
+    background: #fff;
+}
+
+.uni-circles-blureds>div:last-child {
+    right: -50%;
+    bottom: -75%;
+    background: #888888;
+}
+
+.uni-circle-text {
+    position: absolute;
+    left: 57%;
+    top: 20%;
+    transform: translate(-70%, -44%);
+    border-radius: 100%;
+    z-index: 10;
+
+    i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 26px;
+        color: #fff;
+        z-index: 15;
+    }
+}
+
+.uni-circle-text-path {
+    fill: currentColor;
+    height: auto;
+    max-width: 145px;
+    width: 145px;
+    right: 10%;
+    transform-origin: center;
+    text-transform: uppercase;
+}
+
+.uni-circle-text::before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 78px;
+    border: 1px solid rgba(131, 131, 131, .175);
+    position: absolute;
+    transform: scale(.5);
+    left: 0;
+    top: 0;
+    transform: translate(20px, 20px);
+    border-radius: 100%;
+}
+
+.uni-animation-spin {
+    display: inline-flex;
+    animation: spin 10s linear 0s infinite;
+    background: var(--color-primary);
+    border-radius: 50%;
+
+    textPath {
+        color: #fff;
+        font-size: 13px;
+    }
+}
+
+.uni-animation-bounce {
+    display: inline-flex;
+    animation: bounce 3s linear 0s infinite;
+}
+
+.uni-animation-fade {
+    display: inline-flex;
+    animation: fade 2s linear 0s infinite;
+}
+
+.uni-animation-delay-small {
+    animation-delay: .2s
+}
+
+.uni-animation-delay-large {
+    animation-delay: .4s
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0)
+    }
+
+    50% {
+        transform: rotate(180deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(16px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+
+.appoinment-area-wrapper-main-7 {
+    background: var(--color-primary);
+    padding: 78px 100px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+
+    @media #{$sm-layout} {
+        padding: 30px;
+    }
+
+    &::after {
+        height: 810px;
+        width: 810px;
+        border-radius: 50%;
+        background: rgba(43, 39, 255, 0.2);
+        position: absolute;
+        right: -10%;
+        top: 50%;
+        content: '';
+        z-index: -1;
+        transform: translateY(-50%);
+    }
+
+    .right-area-start-appoinment-7 {
+        position: absolute;
+        right: 60px;
+        z-index: 1;
+        bottom: 0;
+
+        @media #{$mdsm-layout} {
+            max-width: 28%;
+        }
+
+        @media #{$sm-layout} {
+            display: none;
+        }
+    }
+
+    .appoinemnt-area-left {
+        .title {
+            margin-top: 70px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        p.disc {
+            font-size: 16px;
+            color: #fff;
+            max-width: 426px;
+        }
+    }
+
+    .rts-btn {
+        background: #fff;
+        color: var(--color-primary);
+
+        &:hover {
+            background: #111032;
+            color: #fff;
+        }
+    }
+}
+
+.rts-find-application-area-inner {
+    border-radius: 10px;
+    background: var(--color-primary);
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @media #{$large-mobile} {
+        padding: 55px;
+    }
+
+    @media #{$small-mobile} {
+        padding: 25px;
+    }
+
+    &::after {
+        position: absolute;
+        right: 130px;
+        top: -70px;
+        background: #5956FF;
+        height: 411px;
+        width: 411px;
+        content: '';
+        z-index: -1;
+        border-radius: 50%;
+    }
+
+    .large-iamge {
+        position: absolute;
+        right: 170px;
+        bottom: 0;
+
+        @media #{$smlg-device} {
+            right: 55px;
+        }
+
+        @media #{$mdsm-layout} {
+            right: 10px;
+            max-width: 30%;
+        }
+
+        @media #{$sm-layout} {
+            display: none;
+        }
+    }
+
+    .find-app-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+    .title {
+        color: #fff;
+    }
+
+    p.disc {
+        max-width: 482px;
+        color: #fff;
+    }
+}
+
+
+.appoinment-area-main.appoinment-page {
+    form {
+        textarea {
+            height: 97px;
+            color: #ffff;
+            padding: 10px;
+            border-radius: 20px;
+
+            &:focus {
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+.rts-appoinment-area {
+    .thumbnail-appoinment-5 {
+        img {
+            @media #{$mdsm-layout} {
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .uni-circle-text {
+        @media #{$mdsm-layout} {
+            display: none;
+        }
+    }
+}
+
+
+.parent-nav {
+    li {
+        a.active {
+            background: var(--color-primary);
+            color: #fff;
+        }
+    }
+}
+
+.main-nav {
+    a {
+        transition: .3s;
+    }
+
+    &:hover {
+        &>a {
+            color: var(--color-primary);
+        }
+    }
+
+    &>a {
+        &.active {
+            background: transparent !important;
+            color: var(--color-primary) !important;
+        }
+    }
+}
+
+.menu-item-open {
+    &>a {
+        color: #5956FF !important;
+    }
+}
